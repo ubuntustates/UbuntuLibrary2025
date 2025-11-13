@@ -42,7 +42,7 @@ export default function RootLayout({
         bg-zinc-50 dark:bg-black text-zinc-800 dark:text-zinc-100 font-sans min-h-screen`}
       >
         <Navbar />
-        <main className="min-h-screen md:my-0 ">
+        <main className="min-h-screen md:my-0 md:pt-20 pt-8">
           <div className="px-6 pt-8">
             {children}
           </div>

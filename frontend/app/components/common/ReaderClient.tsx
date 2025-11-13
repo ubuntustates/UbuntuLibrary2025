@@ -28,7 +28,7 @@ export default function ReaderClient({ file, prevChapter, nextChapter }: ReaderC
     ?.replace(".pdf", "");
 
   return (
-    <div className="relative w-full h-screen bg-gray-50 dark:bg-gray-900 flex flex-col -mt-8">
+    <div className="relative w-full h-screen bg-gray-50 dark:bg-gray-900 flex flex-col md:-mt-28 -mt-16">
       {/* ===== Sticky Navbar ===== */}
       <header className="p-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 sticky top-0 z-10 shadow-sm flex justify-between items-center">
         {/* Left Section: Breadcrumb */}

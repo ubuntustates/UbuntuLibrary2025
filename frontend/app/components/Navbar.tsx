@@ -27,19 +27,22 @@ export default function Navbar() {
   return (
     <div>
       {pathname && !pathname.includes("/reader") && (
-        <nav className="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 shadow-sm">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 shadow-sm">
           <div className="max-w-6xl mx-auto flex items-center justify-between px-4 md:py-1">
             {/* Brand */}
             <Link
               href="/"
-              className="text-xl font-bold text-blue-600 dark:text-blue-400"
+              className="text-xl font-bold text-blue-600 dark:text-blue-400 py-2"
             >
               {/* Ubuntu Library */}
-              <Image 
-                src={"/images/roundLogo.png"} 
-                alt="Ubuntu Library" 
-                width={60} 
-                height={60} />
+              <div className="relative w-8 h-8 md:w-14 md:h-14">
+                <Image
+                  src="/images/roundLogo.png"
+                  alt="Ubuntu Library"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
 
             {/* Desktop Links */}
