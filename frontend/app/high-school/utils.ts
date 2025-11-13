@@ -1,0 +1,1 @@
+export const HIGH_SCHOOL_BASE_URL = "https://high-school-books.vercel.app"
